@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!-- saved from url=(0100)http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh" data-xwiki-reference="xwiki:规范.java编程规范.WebHome" data-xwiki-document="规范.java编程规范.WebHome" data-xwiki-wiki="xwiki" data-xwiki-space="规范.java编程规范" data-xwiki-page="WebHome" data-xwiki-version="6.1" data-xwiki-rest-url="/xwiki/rest/wikis/xwiki/spaces/%E8%A7%84%E8%8C%83/spaces/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/pages/WebHome" data-xwiki-form-token="OLOcBwqn68Mb3BinLeTNQQ"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    
+                                                    <title>APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki</title>
+                                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="shortcut icon" href="http://172.28.2.175:8080/xwiki/resources/icons/xwiki/favicon.ico">
+        <link rel="icon" href="http://172.28.2.175:8080/xwiki/resources/icons/xwiki/favicon16.png" type="image/png">
+        <link rel="icon" href="http://172.28.2.175:8080/xwiki/resources/icons/xwiki/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="http://172.28.2.175:8080/xwiki/resources/icons/xwiki/favicon144.png">
+                      <link rel="alternate" type="application/x-wiki" title="Edit" href="http://172.28.2.175:8080/xwiki/bin/edit/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/WebHome">
+                    <link rel="canonical" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/">
+                <meta name="gwt:property" content="locale=zh">
+                    <meta name="revisit-after" content="7 days">
+<meta name="description" content="APP团队java编程规范">
+<meta name="keywords" content="wiki">
+<meta name="rating" content="General">
+<meta name="author" content="superadmin">
+<link rel="alternate" type="application/rss+xml" title="Wiki Feed RSS" href="http://172.28.2.175:8080/xwiki/bin/view/Main/WebRss?xpage=rdf">
+<link rel="alternate" type="application/rss+xml" title="Blog RSS Feed" href="http://172.28.2.175:8080/xwiki/bin/view/Blog/GlobalBlogRss?xpage=plain">
+                <link href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/tree.min.css" type="text/css" rel="stylesheet">
+    <link href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/drawer.min.css" rel="stylesheet" type="text/css">
+                
+                                                                                                
+<link href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/print.css" rel="stylesheet" type="text/css" media="print">
+        <!--[if IE]>
+  <link href="/xwiki/bin/skin/skins/flamingo/ie-all.css?skin=XWiki.DefaultSkin&#38;colorTheme=xwiki%3AFlamingoThemes.Charcoal" rel="stylesheet" type="text/css" />
+<![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/xwiki-min.css"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/searchSuggest.css"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/tags.css"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/comments.css"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/upload.css"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/attachments.css"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/pagination.css">
+    <link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/Style"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/Settings"><link rel="stylesheet" type="text/css" href="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/FontAwesome">
+
+    <script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/require.min.js.下载"></script>
+                                                                                                                                                          
+    <script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/prototype.js.下载"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/effects.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/xwiki-min.js.下载"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/flamingo.min.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/searchSuggest.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/hierarchy.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/tree.min.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/tags.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/comments.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/upload.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/attachments.js.下载" defer="defer"></script>
+
+    <script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/Script" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/Settings(1)" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/QuickSearchUIX" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/FontAwesome(1)" defer="defer"></script>
+
+
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/compatibility.js.下载" defer="defer"></script>
+<script type="text/javascript" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/markerScript.js.下载" defer="defer"></script>
+<!--[if lt IE 9]>
+    <script src="/xwiki/webjars/html5shiv/3.7.2/html5shiv.min.js?r=1"></script>
+    <script type="text/javascript" src="/xwiki/webjars/respond/1.4.2/dest/respond.min.js?r=1" defer="defer"></script>
+<![endif]-->
+<script type="text/javascript">
+// <![CDATA[
+require.config({
+  paths: {
+    'jquery': '/xwiki/webjars/jquery/1.11.3/jquery.min.js?r=1',
+    'bootstrap': '/xwiki/webjars/bootstrap/3.3.5/js/bootstrap.min.js?r=1',
+    'xwiki-meta': '/xwiki/resources/js/xwiki/meta',
+    'xwiki-events-bridge': "/xwiki/resources/js/xwiki/eventsBridge",
+    'iscroll': '/xwiki/webjars/iscroll/5.1.3/build/iscroll-lite.js?r=1',
+    'drawer': '/xwiki/webjars/drawer/2.4.0/js/jquery.drawer.min.js?r=1'
+  },
+  shim: {
+    'bootstrap' : ['jquery'],
+    'drawer': ['jquery', 'iscroll']
+  },
+    map: {
+    '*': {
+      'jquery': 'jQueryNoConflict'
+    },
+    'jQueryNoConflict': {
+      'jquery': 'jquery'
+    },
+  }
+});
+define('jQueryNoConflict', ['jquery'], function ($) {
+    return $.noConflict();
+});
+if (Prototype.BrowserFeatures.ElementExtensions) {
+  require(['jquery', 'bootstrap'], function ($) {
+    // Fix incompatibilities between BootStrap and Prototype
+    var disablePrototypeJS = function (method, pluginsToDisable) {
+      var handler = function (event) {
+        event.target[method] = undefined;
+        setTimeout(function () {
+            delete event.target[method];
+        }, 0);
+      };
+      pluginsToDisable.each(function (plugin) { 
+          $(window).on(method + '.bs.' + plugin, handler); 
+      });
+    },
+    pluginsToDisable = ['collapse', 'dropdown', 'modal', 'tooltip', 'tab', 'popover'];
+    disablePrototypeJS('show', pluginsToDisable);
+    disablePrototypeJS('hide', pluginsToDisable);
+  });
+}
+require(['jquery', 'drawer'], function($) {
+  $(document).ready(function() {
+    $('body').drawer();
+  });
+});
+XWiki.webapppath = "xwiki/";
+XWiki.servletpath = "bin/";
+XWiki.contextPath = "/xwiki";
+XWiki.mainWiki = "xwiki";
+// Deprecated: replaced by meta data in the HTML element
+XWiki.currentWiki = "xwiki";
+XWiki.currentSpace = "\u89C4\u8303.java\u7F16\u7A0B\u89C4\u8303";
+XWiki.currentPage = "WebHome";
+XWiki.editor = "";
+XWiki.viewer = "";
+XWiki.contextaction = "view";
+XWiki.skin = 'XWiki.DefaultSkin';
+XWiki.docisnew = false;
+XWiki.docsyntax = "markdown/1.1";
+XWiki.docvariant = "";
+XWiki.blacklistedSpaces = [ "Import","Panels","Scheduler","Stats","XAppClasses","XAppSheets","XAppTemplates","XWiki","WatchCode","WatchSheets","XApp","WatchAdmin","Watch","ColorThemes","AnnotationCode" ];
+XWiki.hasEdit = false;
+XWiki.hasProgramming = false;
+XWiki.hasBackupPackImportRights = false;
+XWiki.hasRenderer = false;
+window.docviewurl = "/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/";
+window.docediturl = "/xwiki/bin/edit/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/WebHome";
+window.docsaveurl = "/xwiki/bin/save/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/WebHome";
+window.docgeturl = "/xwiki/bin/get/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/WebHome";
+// ]]>
+</script>
+
+  <meta name="document" content="规范.java编程规范.WebHome"><meta name="wiki" content="xwiki"><meta name="space" content="规范.java编程规范"><meta name="page" content="WebHome"><meta name="version" content="6.1"><meta name="restURL" content="/xwiki/rest/wikis/xwiki/spaces/%E8%A7%84%E8%8C%83/spaces/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/pages/WebHome"><meta name="form_token" content="OLOcBwqn68Mb3BinLeTNQQ"><meta name="language" content="zh"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/jquery.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-events-bridge" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/eventsBridge.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/xwiki/webjars/xwiki-platform-tree-webjar/7.4.1/require-config.min.js?evaluate=true" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/require-config.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="iscroll" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/iscroll-lite.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/bootstrap.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="drawer" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/jquery.drawer.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tree" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/tree.min.js(1).下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="JobRunner" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/jobRunner.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tree-finder" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/finder.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jsTree" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/jstree.min.js.下载"></script></head>
+  <body id="body" class="skin-flamingo wiki-xwiki space-规范.java编程规范 viewbody hideright  panel-left-width-Medium panel-right-width-Medium drawer drawer-right drawer-close">
+<div id="xwikimaincontainer">
+<div id="xwikimaincontainerinner">
+
+  <div id="menuview">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <nav class="navbar navbar-default actionmenu">
+    <div class="container-fluid">
+            <div class="navbar-header">
+                      <div id="companylogo">
+  <a href="http://172.28.2.175:8080/xwiki/bin/view/Main/" title="Home" rel="home" class="navbar-brand">
+    <img src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/logo.svg" alt="Wiki Logo">
+  </a>
+</div>
+
+              </div>
+            <div id="xwikimainmenu">
+    
+          <ul class="nav navbar-nav navbar-left">
+      <li class="divider" role="separator"></li>
+              </ul>
+    
+          <ul class="nav navbar-nav navbar-right">
+        <li>
+    <a class="icon-navbar drawer-toggle" id="tmDrawerActivator"><span class="sr-only">Toggle navigation</span><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+  </li>
+                   
+                   
+                 <li>
+<form class="navbar-form globalsearch globalsearch-close form-inline" id="globalsearch" action="http://172.28.2.175:8080/xwiki/bin/view/Main/Search">
+<input type="text" name="text" placeholder="查找中......" id="headerglobalsearchinput" autocomplete="off">
+<button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+            </ul>
+    
+          </div>    </div>   </nav>
+  
+  
+
+
+
+
+<div class="drawer-main drawer-default" id="tmDrawer">
+  <nav class="drawer-nav" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+  
+                <div class="drawer-brand clearfix">
+      <a href="http://172.28.2.175:8080/xwiki/bin/view/XWiki/XWikiGuest">
+                                      <img class="avatar avatar_120" src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/noavatar.png" alt="XWikiGuest" title="XWikiGuest">      </a>
+      <div class="brand-links">
+                  <a href="http://172.28.2.175:8080/xwiki/bin/login/XWiki/XWikiLogin?xredirect=%2Fxwiki%2Fbin%2Fview%2F%25E8%25A7%2584%25E8%258C%2583%2Fjava%25E7%25BC%2596%25E7%25A8%258B%25E8%25A7%2584%25E8%258C%2583%2F" id="tmLogin">登录</a>
+                      <a href="http://172.28.2.175:8080/xwiki/bin/register/XWiki/XWikiRegister?xredirect=%2Fxwiki%2Fbin%2Fview%2F%25E8%25A7%2584%25E8%258C%2583%2Fjava%25E7%25BC%2596%25E7%25A8%258B%25E8%25A7%2584%25E8%258C%2583%2F" id="tmRegister">注册</a>
+                                                              </div>
+    </div>
+
+                <ul class="drawer-menu">
+                                                
+                                          
+                            
+
+
+
+
+  <li class="drawer-menu-item">
+    <a href="http://172.28.2.175:8080/xwiki/bin/view/WikiManager/">
+      <div class="drawer-menu-item-icon">
+        <span class="glyphicon glyphicon-list"></span>
+      </div>
+      <div class="drawer-menu-item-text">Wiki Index</div>
+    </a>
+  </li>
+                                  
+                            
+                                <li class="drawer-menuseparator"></li>
+            
+                </ul>
+  </nav>
+</div>
+
+
+
+
+  </div>
+ <div id="headerglobal">
+  <div id="globallinks">
+  </div>   <div class="clearfloats"></div>
+  </div> 
+
+
+<div class="contenthideright" id="contentcontainer">
+<div id="contentcontainerinner">
+<div class="leftsidecolumns">
+  <div id="contentcolumn"> 
+  
+          
+  <div class="main">
+  <div id="mainContentArea">
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                <ol id="hierarchy" class="breadcrumb breadcrumb-expandable" data-entity="规范.java编程规范.WebHome" data-id="hierarchy" data-limit="5" data-treenavigation="true" data-entities="{Space xwiki:规范.java编程规范=规范.java编程规范.WebHome}"><li class="wiki dropdown"><a href="http://172.28.2.175:8080/xwiki/bin/view/Main/"><img src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/house.png" alt="Icon"></a><span class="dropdown-toggle" data-toggle="dropdown"><img src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/bullet_arrow_down.png" alt="Icon"></span><div class="dropdown-menu">                                                                                                                                                      <div class="breadcrumb-tree" data-responsive="true" data-url="/xwiki/bin/get/XWiki/DocumentTree?outputSyntax=plain&amp;limit=10&amp;showTranslations=false&amp;" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="document:xwiki:规范.java编程规范.WebHome" data-finder="false"></div>
+</div></li><li class="space dropdown"><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/">规范</a><span class="dropdown-toggle" data-toggle="dropdown"><img src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/bullet_arrow_down.png" alt="Icon"></span><div class="dropdown-menu">                                                                                                                                                          <div class="breadcrumb-tree" data-responsive="true" data-url="/xwiki/bin/get/XWiki/DocumentTree?outputSyntax=plain&amp;limit=10&amp;root=wiki%3Axwiki&amp;showTranslations=false&amp;root=wiki%3Axwiki" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="document:xwiki:规范.WebHome" data-finder="false"></div>
+</div></li><li class="active space dropdown"><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/">APP团队java编程规范</a><span class="dropdown-toggle" data-toggle="dropdown"><img src="./APP团队java编程规范 (规范.java编程规范.WebHome) - XWiki_files/bullet_arrow_down.png" alt="Icon"></span><div class="dropdown-menu">                                                                                                                                                          <div class="breadcrumb-tree" data-responsive="true" data-url="/xwiki/bin/get/XWiki/DocumentTree?outputSyntax=plain&amp;limit=10&amp;root=document%3Axwiki%3A%E8%A7%84%E8%8C%83.WebHome&amp;showTranslations=false&amp;root=document%3Axwiki%3A%E8%A7%84%E8%8C%83.WebHome" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="document:xwiki:规范.java编程规范.WebHome" data-finder="false"></div>
+</div>      </li></ol>
+    
+      
+
+
+    
+
+
+
+
+
+
+
+<div class="xcontent">
+  <div class="row document-header">
+  <div class="document-info col-xs-12 col-md-7">
+                    <div id="document-title"><h1>APP团队java编程规范</h1></div>
+          <div class="xdocLastModification">
+        在2018/03/02 17:14上被superadmin修改
+      </div>
+      </div>
+      <div class="document-menu col-xs-12 col-md-5">
+      
+  
+<div id="contentmenu" class="pull-right actionmenu">
+      
+                                            
+                                                                                                      <div class="dropdown" id="tmMoreActions">
+      <a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-option-vertical"></span></a>
+      <ul class="dropdown-menu">
+                                                        <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/" id="tmExport" title="导出" data-toggle="modal" data-target="#exportModal"><span class="glyphicon glyphicon-download-alt"></span> 导出</a></li>
+    
+                         
+    <li class="tme"><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/#Comments" id="tmAnnotationsTrigger" title="注释"><span class="glyphicon glyphicon-edit"></span> 注释</a></li>
+                                <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?xpage=print" id="tmPrintPreview" title="打印预览"><span class="glyphicon glyphicon-print"></span> 打印预览</a></li>
+    
+                                <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?viewer=code" id="tmViewSource" title="察看源码"><span class="glyphicon glyphicon-search"></span> 察看源码</a></li>
+    
+                                  <li class="divider" role="separator"></li>
+                                        
+                  <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?viewer=children" title="子"><span class="glyphicon glyphicon-folder-open"></span> 子</a></li>
+                  <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?viewer=comments" title="评论"><span class="glyphicon glyphicon-comment"></span> 评论</a></li>
+                  <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?viewer=attachments" title="附件"><span class="glyphicon glyphicon-paperclip"></span> 附件</a></li>
+                  <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?viewer=history" title="记录"><span class="glyphicon glyphicon-time"></span> 记录</a></li>
+                  <li class=""><a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?viewer=information" title="信息"><span class="glyphicon glyphicon-info-sign"></span> 信息</a></li>
+
+
+      
+      </ul>
+    </div>
+              <div class="modal fade text-left" id="exportModal" tabindex="-1" role="dialog" aria-labelledby="exportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="exportModalLabel">导出</h4>
+        </div>
+        <div class="modal-body">
+          <a href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/?xpage=pdfoptions&amp;qs=" class="btn btn-primary">以PDF格式导出</a>
+                    <a href="http://172.28.2.175:8080/xwiki/bin/export/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/WebHome?format=html" class="btn btn-primary">以HTML格式导出</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+<hr>
+
+          
+        <div class="row">
+    <div id="xwikicontent" class="col-xs-12">
+              <h1 id="H96F630018BF4660E-45"><span>零、说明</span></h1><ul><li><p>命名尽量做到见名知意，采用驼峰标识，禁止使用拼音或者表意不明确的标识（比如bianliang、i、j）;</p></li><li><p>命名无法完全表达作者的意思时，才考虑使用注释；注释的目的是帮助读者理解代码，提升代码的可读性；</p></li><li><p>注释应该表达“我的代码为什么要这么做？”，而不是表达“我的代码做了什么？”；</p></li><li><p>尽量降低方法的圈复杂度，遇到不满足条件时直接返回；</p></li><li><p>一个变量只有一个意思；一个方法只做一件事情；业务逻辑的具体实现封装在model层；要保证代码尽量独立，方便单元测试、重构、理解和维护；</p></li><li><p>糟糕的注释示例：</p><div class="box"><div class="code"><span style="font-weight: italic; color: #408080; ">/* 一个整数 */</span><span style="color: #bbbbbb; "><br></span>int<span style="color: #bbbbbb; ">&nbsp;</span>i<span style="border: 1px solid #FF0000; ">;</span><span style="color: #bbbbbb; "><br><br><br></span><span style="font-weight: italic; color: #408080; ">/* i从0循环到8 */</span><span style="color: #bbbbbb; "><br></span><span style="font-weight: bold; color: #008000; ">for</span><span style="color: #bbbbbb; ">&nbsp;</span><span style="color: #666666; ">(</span>i<span style="color: #666666; ">=</span><span style="color: #666666; ">0</span><span style="border: 1px solid #FF0000; ">;</span><span style="color: #bbbbbb; ">&nbsp;</span>i<span style="color: #666666; ">&lt;=</span><span style="color: #666666; ">8</span><span style="border: 1px solid #FF0000; ">;</span><span style="color: #bbbbbb; ">&nbsp;</span>i<span style="color: #666666; ">++)</span><span style="color: #bbbbbb; "><br><br></span><span style="color: #666666; ">//</span><span style="color: #bbbbbb; ">&nbsp;</span><span style="border: 1px solid #FF0000; ">变量命名的问题</span><span style="color: #bbbbbb; "><br></span>int<span style="color: #bbbbbb; ">&nbsp;</span>bianliang<span style="border: 1px solid #FF0000; ">;</span><span style="color: #bbbbbb; "><br><br></span><span style="color: #666666; ">//</span><span style="color: #bbbbbb; ">&nbsp;</span><span style="border: 1px solid #FF0000; ">变量命名的问题</span><span style="color: #bbbbbb; "><br></span>class<span style="color: #bbbbbb; ">&nbsp;</span>MyView<span style="color: #bbbbbb; ">&nbsp;</span>extends<span style="color: #bbbbbb; ">&nbsp;</span>View<span style="color: #bbbbbb; "><br><br></span><span style="color: #666666; ">//</span><span style="color: #bbbbbb; ">&nbsp;</span><span style="border: 1px solid #FF0000; ">圈复杂度的问题</span><span style="color: #bbbbbb; "><br></span>boolean<span style="color: #bbbbbb; ">&nbsp;</span>isValid<span style="color: #666666; ">(</span>String<span style="color: #bbbbbb; ">&nbsp;</span>content<span style="color: #666666; ">)</span><span style="border: 1px solid #FF0000; ">{</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: #008000; ">if</span><span style="color: #666666; ">(</span>null<span style="color: #bbbbbb; ">&nbsp;</span><span style="border: 1px solid #FF0000; ">!</span><span style="color: #666666; ">=</span><span style="color: #bbbbbb; ">&nbsp;</span>content<span style="color: #666666; ">)</span><span style="border: 1px solid #FF0000; ">{</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: #008000; ">if</span><span style="color: #666666; ">(</span>isSpaceEnough<span style="color: #666666; ">())</span><span style="border: 1px solid #FF0000; ">{</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: #008000; ">if</span><span style="color: #666666; ">(</span>isNetWorkOk<span style="color: #666666; ">())</span><span style="border: 1px solid #FF0000; ">{</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: #008000; ">if</span><span style="color: #666666; ">(</span>isInOtherThread<span style="color: #666666; ">())</span><span style="border: 1px solid #FF0000; ">{</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: #008000; ">for</span><span style="color: #666666; ">(</span>int<span style="color: #bbbbbb; ">&nbsp;</span>index<span style="color: #bbbbbb; ">&nbsp;</span><span style="color: #666666; ">=</span><span style="color: #bbbbbb; ">&nbsp;</span><span style="color: #666666; ">0</span><span style="border: 1px solid #FF0000; ">;</span><span style="color: #bbbbbb; ">&nbsp;</span>index<span style="color: #bbbbbb; ">&nbsp;</span><span style="color: #666666; ">&lt;</span><span style="color: #bbbbbb; ">&nbsp;</span>N<span style="border: 1px solid #FF0000; ">;</span><span style="color: #bbbbbb; ">&nbsp;</span>index<span style="color: #666666; ">++)</span><span style="border: 1px solid #FF0000; ">{</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #666666; ">......</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="border: 1px solid #FF0000; ">}</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="border: 1px solid #FF0000; ">}</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="border: 1px solid #FF0000; ">}</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="border: 1px solid #FF0000; ">}</span><span style="color: #bbbbbb; "><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="border: 1px solid #FF0000; ">}</span><span style="color: #bbbbbb; "><br></span><span style="border: 1px solid #FF0000; ">}</span><span style="color: #bbbbbb; "><br></span></div></div></li><li><p>编码风格体现了开发人员的基本素质，</p></li></ul><h1 id="H4E0030016392724889C48303-14"><span>一、排版规范</span></h1><ul><li><p>程序块要采用缩进风格编写，缩进为4个空格；</p></li><li><p>较长的语句、表达式或参数（&gt;80字符）要分成多行书写，控制每行在80个字符以内；</p></li><li><p>不允许把多个短语句写在一行中，即一行只写一条语句；</p></li><li><p>if、for、do、while、case、switch、default等语句自占一行，且执行语句无论多少都要加括号{}；</p></li><li><p>相对独立的程序块之间、变量声明之后必须加空行；</p></li></ul><p>  空行将逻辑相关的代码段分隔开,以提高可读性。下列情况应该使用空行:</p><p>  1. 一个源文件的两个片段(section)之间；</p><p>  2. 类声明和接口声明之间；</p><p>  3. 两个方法之间；</p><p>  4. 方法内的局部变量和方法的第一条语句之间；</p><p>  5. 一个方法内的两个逻辑段之间，用以提高可读性；</p><p>  6. 通常在变量声明区域之后要用空行分隔，常量声明区域之后要有空行分隔，方法声明之前要有空行分隔。</p><ul><li><p>构造函数有多个时，要依据参数少的在前面，参数多的在后面的原则编写代码，提高代码可读性；</p></li><li><p>代码排版按照成员变量声明、系统回调、公有方法、protected方法、私有方法、内部类的顺序;</p></li><li><p>不允许将大块业务代码直接写在系统回调方法中，必须抽离成方法供系统回调调用，eg:</p><div class="box"><div class="code">@Override<br>protected void onCreate(Bundle savedInstanceState) {<br>&nbsp;&nbsp;&nbsp;&nbsp;super.onCreate(savedInstanceState);<br>&nbsp;&nbsp;&nbsp;&nbsp;setContentView(R.layout.activity_dictation_layout);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;// 将初始化代码封装成方法供系统回调调用，不要将实例化代码直接放在系统回调方法里面<br>&nbsp;&nbsp;&nbsp;&nbsp;initDictation();<br>}<br><br>private void initDictation(){<br>&nbsp;&nbsp;&nbsp;&nbsp;findViews();<br>&nbsp;&nbsp;&nbsp;&nbsp;getData();<br>&nbsp;&nbsp;&nbsp;&nbsp;showContent();<br>}</div></div></li><li><p>为了提高代码的可读性，保证每个方法功能单一，单个方法代码量控制在50行以内，最多不能超过200行，并且应尽量减少方法之间的耦合；</p></li><li><p>左大括号放置在行尾，右大括号单独占一行；</p></li><li><p>静态类的构造方法需要私有化，eg:</p><div class="box"><div class="code">public class ArrayUtils {<br>&nbsp;&nbsp;&nbsp;&nbsp;private ArrayUtils(){<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;public static &lt;V&gt; boolean isEmpty(V[] sourceArray) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (sourceArray == null || sourceArray.length == 0);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div></div></li></ul><h1 id="H4E8C30016CE891CA89C48303-13"><span>二、注释规范</span></h1><ul><li>JAVA程序有两类注释：</li></ul><p>  1. 一类是实现性注释（implementation comments）</p><p>  2. 另一类是文档型注释（documentation comments）。</p><p>  其中，实现性注释有两种格式，/*…<em>/ 和//。文档型注释是JAVA程序所独有的，在/</em>*…<em>/中限定。文档型注释能够被javadoc文件工具提取到HTML文件中。</em></p><p>  **注意：**</p><p>  1. 过于频繁的注释常常意味着代码质量较低。当你觉得必须频繁添加注释时，应考虑重写该段代码了。</p><p>  2. 注释内容不应封在星号（*）或者其它字母围成的矩形框中；注释中不应带有特殊注释字符如制表（form-feed）和退格符（backspace）。</p><p>  **文档注释基本原则：**</p><p>  1. 注释应能使代码更加明确；</p><p>  2. 避免注释部分的过度装饰；</p><p>  3. 保持注释部分简单、明确；</p><p>  4. 在编码以前就应开始写注释；</p><p>  5. 注释应说明设计思路而不是描述代码的行为。</p><ul><li>类注释</li></ul><p>  每一个类都必须要包含如下格式的注释，以说明当前类的功能等。</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;/**<br>&nbsp;&nbsp;&nbsp;&nbsp;* @author 作者<br>&nbsp;&nbsp;&nbsp;&nbsp;* 实现的主要功能。<br>&nbsp;&nbsp;&nbsp;&nbsp;* 创建日期<br>&nbsp;&nbsp;&nbsp;&nbsp;* 修改者,修改日期,修改内容。<br>&nbsp;&nbsp;&nbsp;&nbsp;*/</div></div><ul><li>方法注释</li></ul><p>  关键方法或者需要特别说明的方法都需要添加如下格式的注释，包括当前方法的用途、当前方法参数的含义、当前方法返回值的内容和抛出异常的列表。</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;/**<br>&nbsp;&nbsp;&nbsp;&nbsp;* 方法的一句话概述<br>&nbsp;&nbsp;&nbsp;&nbsp;* <span style="font-weight: bold; color: #008000; ">&lt;p&gt;</span>方法详述(简单方法可不必详述)<span style="font-weight: bold; color: #008000; ">&lt;/p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;* @param s 说明参数含义<br>&nbsp;&nbsp;&nbsp;&nbsp;* @return 说明返回值含义<br>&nbsp;&nbsp;&nbsp;&nbsp;* @throws IOException 说明发生此异常的条件<br>&nbsp;&nbsp;&nbsp;&nbsp;*/</div></div><ul><li>类成员变量和常量注释</li></ul><p>  关键成员变量或者需要说明的成员变量和常量需要使用 java doc 形式的注释，以说明当前变量或常量的含义</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;/**<br>&nbsp;&nbsp;&nbsp;&nbsp;* XXXX含义<br>&nbsp;&nbsp;&nbsp;&nbsp;*/</div></div><ul><li>其他注释；</li></ul><p>  方法内部的注释如果需要多行，使用/*??*/形式，如果为单行是用//??形式的注释。不要在方法内部使用 java doc 形式的注释“/**??*/”。</p><ul><li>XML 注释；</li></ul><p>  如果当前 layout 或资源需要被多处调用，或为公共使用的 layout , 则需要在 xml 写明注释。要求注释清晰易懂。</p><ul><li><p>注释与所描述内容进行同样的缩排；</p></li><li><p>与doc相关的标签如下表</p></li></ul><p>  1. @author：作者的名称；类、接口；说明特定某一段程序代码的作者。每一个作者各有一个标记。</p><p>  2. @deprecated：类、方法；说明该类的应用程序编程接口 (API) 已被废弃，因此应不再使用。</p><p>  3. @exception：name description；说明由方法发出的异常。一个异常采用一个标记，并要给出异常的完整类名。</p><p>  4. @param：name 参数名的描述；用来说明传递给一个方法的参数，其中包括参数的类型/类和用法。每个参数各有一个标记。</p><p>  5. @return：方法返回值的描述；若方法有返回值，对该返回值进行说明。应说明返回值的类型/类和可能的用途。</p><p>  例如：&nbsp;</p><div class="box"><div class="code"> &nbsp;&nbsp;&nbsp;<span style="border: 1px solid #FF0000; ">@</span>see 类名 &nbsp;&nbsp;&nbsp;类<span style="border: 1px solid #FF0000; ">、</span>接口<span style="border: 1px solid #FF0000; ">、</span>方法<span style="border: 1px solid #FF0000; ">、</span>字段 在文档中生成指向特定类的超文本链接<span style="border: 1px solid #FF0000; ">。</span>可以并且应该采用完全合法的类名<span style="border: 1px solid #FF0000; ">。</span><br> &nbsp;&nbsp;&nbsp;<span style="border: 1px solid #FF0000; ">@</span>see ClassName<span style="border: 1px solid #FF0000; ">#</span>member functionName 类<span style="border: 1px solid #FF0000; ">、</span>接口<span style="border: 1px solid #FF0000; ">、</span>方法<span style="border: 1px solid #FF0000; ">、</span>字段 &nbsp;在文档中生成指向特定方法的超文本链接<span style="border: 1px solid #FF0000; ">。</span>可以并且应该采用完全合法的类名<span style="border: 1px solid #FF0000; ">。</span><br> &nbsp;&nbsp;&nbsp;<span style="border: 1px solid #FF0000; ">@</span>version 版本号 &nbsp;&nbsp;类<span style="border: 1px solid #FF0000; ">、</span>接口 &nbsp;说明特定一段代码的版本信息<span style="border: 1px solid #FF0000; ">。</span></div></div><h1 id="H4E093001547D540D89C48303-13"><span>三、命名规范</span></h1><ul><li>命名的基本原则：</li></ul><p>  1. 命名的格式：[作用区间]+释义+类型，比如设置界面的布局文件：activity_setting_layout，设置按钮的ID：settingBtnId，成员变量设置按钮：mSettingBtn等。</p><p>  2. 使用完整的英文描述符准确描述变量variable/域field/类class；</p><p>  3. 好的命名能够减少不必要的注释和理解代码的难度，应尽量做到见名知意，比如settingBtn、feedBackLayout、getUpdateInfo、getCurrentTime、setUserInfo, 而诸如x1、y1、my*、main*等命名不能反映任何命名含义而且造成代码难以理解、维护和改进。</p><p>  4. 采用应用领域相关的术语来命名，软件开发人员应注意软件用户的一些约定术语，不应当随意的创造术语。这会降低软件的易维护性。</p><p>  5. 采用大小写混合的方式提高命名的可读性一般情况下应该用小写字母来命名，其中类（class）和接口（interface）名称的首字母用大写。</p><p>  6. 命名中应该慎用缩写命名。如要采用，则应采用统一的缩略规则，并且在文中的相应部分统一采用缩写。例如，采用num作为number的缩写，那么在整个文档中应该始终使用该缩写。</p><p>  7. 避免太长的命名，命名的长度一般小于30个字符，最好不要超过15个字符。避免采用仅有大小写不同命名。</p><p>  8. 命名时应避免采用几乎相同的名称。例如，变量名称persistentObject和persistentObjects不应当同时运用；anSqlDatabase和anSQLDatabase也不应同时使用。</p><p>  9. 有时名称中会含有固定的缩略词，例如SQL代表Standard Query Language. 而在命名时sqlDatabase和SqlDatabase就比sQLDatabase和SQLDatabase易于阅读。</p><p>  10. 避免以下划线开头的命名。</p><ul><li>包命名</li></ul><p>  **命名规则：**字母全部采用小写，以com.eebbk开始，后面跟有模块名称，再后面为层级名称。如:com.eebbk.模块名.层级名：&nbsp;</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;com.eebbk.musicplayer.activity</div></div><p>  对于功能较多的大模块，可增加功能名一级。如：com.eebbk.模块名.功能名.层级名：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;com.eebbk.english.pointread.view</div></div><ul><li>类和接口的命名</li></ul><p>  **命名规则：**采用大小写混合的方式，每个单词的首字母大写。尽量使你的类名简洁而富于描述。使用完整单词，避免缩写词(除非该缩写词被更广泛使用，像URL，HTML)，由于类是设计用来代表对象的，所以在命名类时应尽量选择名词。如:&nbsp;</p><div class="box"><div class="code"> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> PhotoAdapter;<br><br> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> MusicPlayer;<br><br> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> VideoInfo;<br><br> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> ImageSprite;</div></div><p>  接口使用I开头，抽象类使用A开头。如:&nbsp;</p><div class="box"><div class="code"> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> IVideo;<br><br> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> ASprite;</div></div><ul><li>方法的命名</li></ul><p>  **命名规则：**方法名是一个动词，采用大小写混合的方式，第一个单词的首字母小写，其后单词的首字母大写（小写字母开头，任意字母、数字组成）。例如:&nbsp;</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;public void run(); <br><br>&nbsp;&nbsp;&nbsp;&nbsp;public String getBookName();</div></div><p>  类中常用方法的命名:</p><p>  1. 类的获取方法(一般具有返回值)一般要求在被访问的字段名前加上get，如getFirstName()，getLastName()。一般来说，get前缀方法返回的是单个值，find 前缀的方法返回的是列表值；</p><p>  2. 类的设置方法(一般返回类型为 void)：被访问字段名的前面加上前缀set，如setFirstName()，setLastName()；</p><p>  3. 类的布尔型的判断方法一般要求方法名使用单词is或has做前缀，如isPersistent()，isString()。或者使用具有逻辑意义的单词，例如equal或 equals。</p><p>  4. 类的普通方法一般采用完整的英文描述说明成员方法功能，第一个单词尽可能采用动词，首字母小写，如openFile()，addCount()。</p><p>  5. 构造方法应该用递增的方式写(参数多的写在后面)。</p><ul><li>非静态成员命名</li></ul><p>  **命名规则：**使用驼峰规则, m与任意一大写字母开头，由字母、数字组成，如mUserName,mMediaPlayer；</p><ul><li>常量命名</li></ul><p>  **命名规则：**类常量的声明，应该全部大写，单词间用下划线隔开（以大写字母开头，由大写字母、数字和下划线组成），例如：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;static final int MIN_WIDTH = 4;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;static final int MAX_WIDTH = 999;</div></div><ul><li>局部final变量与catch参数:</li></ul><p>  **命名规则：**小写字母开头，由字母、数字组成，eg：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;final int age；</div></div><ul><li>局部非final变量与catch参数:</li></ul><p>  **命名规则：**小写字母开头，由字母、数字组成，eg:</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;int userCount；</div></div><ul><li>异常命名</li></ul><p>  自定义异常的命名必须以Exception为结尾，以明确标示为一个异常。</p><ul><li>layout 命名</li></ul><p>  layout xml的命名必须以全部单词小写，单词间以下划线分割，并且使用名词或名词词组，即使用 “[作用区间]_释义_类型”来命名。</p><p>  1. layout命名：activity_释义_layout.xml，例如：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;activity_setting_layout.xml；</div></div><p>  2. Dialog命名：dialog_释义_layout.xml，例如：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;dialog_app_update_layout.xml</div></div><p>  3. Popupwindow命名：popupwindow_释义_layout，例如：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;popupwindow_grade_list_layout.xml</div></div><p>  4. Adapter中项的布局命名：listview/gridview_item_释义_layout，例如：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;listview_item_grade_layout</div></div><p>  5. 包含项的命名：include_释义_layout，例如：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;include_top_bar_layout.xml</div></div><ul><li>id 命名</li></ul><p>  layout中所使用的id要求能够通过id直接理解当前组件要实现的功能，命名规则为：功能+类型+Id；如:显示课文名称的TextView，应命名为：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;@+id/lessonNameTxtId;</div></div><p>  如：输入用户名的EditText，应命名为：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;@+id/userNameEditTxtId;</div></div><ul><li>资源命名</li></ul><p>  layout中所使用的所有资源(如 drawable,style,diem 等)要求能够通过 id 直接理解当前组件要实现的功能，命名规则为：功能+类型+[normal/press]+[索引值]，如： 设置界面的背景图，应命名为：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;setting_bg;</div></div><p>  设置按钮正反选图，应分别命名为：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;setting_btn_normal;<br>&nbsp;&nbsp;&nbsp;&nbsp;setting_btn_press;</div></div><p>  性别勾选checkbox正反选，应命名为：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;sex_checkbox_normal;<br>&nbsp;&nbsp;&nbsp;&nbsp;sex_checkbox_press;</div></div><p>  物体移动AnimationDrawable动画，应命名为：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;dog_move_0<br>&nbsp;&nbsp;&nbsp;&nbsp;dog_move_1<br>&nbsp;&nbsp;&nbsp;&nbsp;dog_move_2</div></div><ul><li>常用的反义词组</li></ul><p>  add / remove；&nbsp;</p><p>  begin / end；&nbsp;</p><p>  create / destroy；</p><p>  insert / delete；</p><p>  first / last；&nbsp;</p><p>  get / set；</p><p>  increment / decrement；&nbsp;</p><p>  put / get；</p><p>  add / delete；&nbsp;</p><p>  lock / unlock；</p><p>  open / close；&nbsp;</p><p>  min / max；</p><p>  old / new ；&nbsp;</p><p>  start / stop；</p><p>  next / previous；</p><p>  source / target；</p><p>  show / hide；</p><p>  send / receive；</p><p>  source / destination ；</p><p>  cut / paste；</p><p>  up / down</p><ul><li>常用的缩写</li></ul><p>  Button，简写：Btn(btn)；</p><p>  RadioButton，简写：Rbtn(rbtn)；</p><p>  ImageButton，简写：Ibtn(ibtn)；</p><p>  TextView，简写：Tv(tv)；</p><p>  ImageView，简写：Iv (iv)；</p><p>  ListView，简写：Lv(lv)；</p><p>  ProgressBar，简写：Pbar(pbar)；</p><p>  EditText，简写：Edtv(et)；</p><p>  ScrollView，简写：Sclv(scly)；</p><p>  CheckBox，简写：Chk(chk)；</p><p>  RelativeLayout，简写：Rlyt(rlyt)；</p><p>  LinearLayout，简写：Llyt(llyt)；</p><p>  TableLayout，简写：Tlyt(tlyt)；</p><p>  AbsoluteLayout，简写：ALyt(alyt)；</p><p>  FrameLayout，简写：Flyt(flyt)；</p><p>  RadioGroup，简写：Rgp(rgp)；</p><p>  SharedPreferences，记那些：Sp(sp)。</p><ul><li><p>回调函数以必须以on开头；</p></li><li><p>标识符应当使用完整的英文描述，标识符的命名应当符合“min-length &amp;&amp; max-information”原则，谨慎使用缩写；</p></li></ul><p>  **说明：**</p><p>  1. 对于标识符应当使用完整的英文进行描述，对于整个描述较长的，可对单词进行缩略;</p><p>  2. 对单词的缩略可按较短的单词可通过去掉“元音”形成缩写，较长的单词可取单词的头几个字母形成缩写，一些单词有大家公认的缩写，常用单词的缩写必须统一。</p><p>  3. 协议中的单词的缩写与协议保持一致。对于某个系统使用的专用缩写应该在某处做统一说明。设计命名中应该慎用缩写命名。如要采用，则应采用统一的缩略规则；</p><ul><li><p>注意静态常量的声明次序(方括号中的内容为可选)：[作用域]+[static]+[final]+类型+属性名称 = 初始值；比如：</p><div class="box"><div class="code">public static final int NAME = 5;</div></div></li></ul><h1 id="H56DB3001JAVA4EE37801680751C689C45219-12"><span>四、JAVA代码标准规则</span></h1><ul><li><p>禁止出现多余的修饰符；</p></li><li><p>文件长度控制在 2000 行以内；</p></li><li><p>方法职责要单一，要求方法行数控制在200行以内 ；推荐一个方法尽量不要超过50行,如果方法太长,说明当前方法业务逻辑已经非常复杂,那么就需要进行方法拆分,保证每个方法只作一件事。</p></li><li><p>一个方法的参数尽可能的不要超过5个；</p></li><li><p>控制语句，所有if、switch条件分支必须用{}包括起来,即便是只有一句：</p><div class="box"><div class="code">if (***){<br>&nbsp;&nbsp;&nbsp;&nbsp;//do something......<br>}<br><br>if (***)<br>i = 0; //不要使用这种</div></div></li><li><p>异常的捕捉处理</p></li></ul><p>  1. 通常的思想是只对错误采用异常处理：逻辑和编程错误，设置错误，被破坏的数据，资源耗尽等等；</p><p>  2. 通常的法则是系统在正常状态下以及无重载和硬件失效状态下，不应产生任何异常；</p><p>  3. 最小化从一个给定的抽象类中导出的异常的个数；</p><p>  4. 对于经常发生的可预计事件不要采用异常；</p><p>  5. 不要使用异常实现控制结构；</p><p>  6. 若有finally子句，则不要在try块中直接返回，亦不要在 finally 中直接返回。</p><ul><li><p>数据库操作、IO操作等需要使用结束close()的对象必须在try -catch-finally 的finally中close()。示例：</p><div class="box"><div class="code">try{<br><br>}catch(IOException ioe){<br><br>}finally{<br>&nbsp;&nbsp;&nbsp;&nbsp;try{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out.close();<br>&nbsp;&nbsp;&nbsp;&nbsp;}catch (IOException ioe){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div></div></li><li><p>访问控制，仅对需要对外公布的方法、变量采用public，其余的尽量使访问域最小化。</p></li><li><p>禁止使用立即数，用有意义的标识来替代，涉及物理状态或者含有物理意义的常量，不应直接使用数字，必须用有意义的静态变量来代替。如下的程序可读性差：</p><div class="box"><div class="code">if (state == 0){<br>&nbsp;&nbsp;&nbsp;&nbsp;state = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;... &nbsp;// program code<br>}</div></div></li></ul><p>  应改为如下形式：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;private final static int TRUNK_IDLE = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;private final static int TRUNK_BUSY = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;private final static int TRUNK_UNKNOWN = -1;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;if (state == TRUNK_IDLE){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state = TRUNK_BUSY;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... &nbsp;// program code<br>&nbsp;&nbsp;&nbsp;&nbsp;}</div></div><ul><li>编码格式，所有工程必须是UTF-8编码；</li></ul><h1 id="H4E9430014EE378014F18531689C45219-12"><span>五、代码优化规则</span></h1><ul><li><p>避免在循环表达式中调用函数或方法，提高代码性能，反例：</p><div class="box"><div class="code"><span style="font-weight: bold; color: #008000; ">class</span> CEL{<br> &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #008000; ">void</span> <span style="font-weight: bold; color: #008000; ">method</span> (Vector vector){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 违例<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">for</span> (<span style="color: #008000; ">int</span> i = <span style="color: #666666; ">0</span>; i &lt; vector.size (); i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div></div></li></ul><p>  正例：</p><div class="box"><div class="code"> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">class</span> CELFixed {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #008000; ">void</span> <span style="font-weight: bold; color: #008000; ">method</span> (Vector vector){<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #008000; ">int</span> size = vector.size ();<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">for</span> (<span style="color: #008000; ">int</span> i = <span style="color: #666666; ">0</span>; i &lt; size; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//正确<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div></div><ul><li><p>如有打开的数据流，在finally语句块中关闭数据流，避免潜在的bugs，反例：</p><div class="box"><div class="code">public class CS {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void method (java.io.File f){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.io.FileInputStream fis = new java.io.FileInputStream (f);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fis.read ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fis.close ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}catch (java.io.FileNotFoundException e1){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("File not found");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}catch (java.io.IOException e2){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("I/O Exception");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 违例: 如果有异常发生'fis'永远不会关闭<br>&nbsp;&nbsp;&nbsp;}<br>&nbsp;}</div></div></li></ul><p>  正例：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;public class CSFixed{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void method (java.io.File f){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.io.FileInputStream fis = new java.io.FileInputStream (f);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fis.read ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}catch (java.io.FileNotFoundException e1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("File not found");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}catch (java.io.IOException e2){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("I/O Exception");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}finally{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fis.close ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}</div></div><ul><li><p>使用’System.arrayCopy()’替代循环拷贝数组，优化性能，反例：</p><div class="box"><div class="code">public class IRB{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] copyArray (int[] array){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int length = array.length;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] copy = new int [length];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; length; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//违例<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copy[i] = array[i]; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return copy;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div></div></li></ul><p>  正例：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;public class IRB{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] copyArray (int[] array){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int length = array.length;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] copy = new int [length];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//正确<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.arraycopy(array, 0, copy, 0, length); <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return copy;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}</div></div><ul><li><p>避免在循环语句内部出现”try/catch/finally”，优化代码，反例：</p><div class="box"><div class="code">public class TRY{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void method (FileInputStream fis){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; size; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//违例 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += fis.read ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}catch (Exception e){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int _sum;<br>}</div></div></li></ul><p>  正例：</p><div class="box"><div class="code">&nbsp;&nbsp;&nbsp;&nbsp;public class TRY{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void method (FileInputStream fis){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//正确<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; size; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += fis.read ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}catch (Exception e) {<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}</div></div><ul><li><p>在循环体中避免实例化对象或声明变量，提高代码运行性能，反例：</p><div class="box"><div class="code"><span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">class</span> <span style="font-weight: bold; color: #008000; ">LOOP</span>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void method(int max)<span style="border: 1px solid #FF0000; ">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i <span style="color: #666666; ">=</span> <span style="color: #666666; ">0</span>; i <span style="color: #666666; ">&lt;</span> max; i<span style="color: #666666; ">++</span>)<span style="border: 1px solid #FF0000; ">{</span><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #666666; ">//</span><span style="border: 1px solid #FF0000; ">违例</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer sb <span style="color: #666666; ">=</span> new StringBuffer(); &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb<span style="color: #666666; ">.</span>append(<span style="color: #BA2121; ">"loop: "</span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb<span style="color: #666666; ">.</span>append(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System<span style="color: #666666; ">.</span>out<span style="color: #666666; ">.</span>println(sb<span style="color: #666666; ">.</span>toString());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br> &nbsp;&nbsp;&nbsp;&nbsp;<span style="border: 1px solid #FF0000; ">}</span><br><span style="border: 1px solid #FF0000; ">}</span></div></div></li></ul><p>  正例：</p><div class="box"><div class="code"> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">class</span> <span style="font-weight: bold; color: #008000; ">LOOPFixed</span>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void method(int max)<span style="border: 1px solid #FF0000; ">{</span><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #666666; ">//</span><span style="border: 1px solid #FF0000; ">正确</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer sb <span style="color: #666666; ">=</span> new StringBuffer(); &nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i <span style="color: #666666; ">=</span> <span style="color: #666666; ">0</span>; i <span style="color: #666666; ">&lt;</span> max; i<span style="color: #666666; ">++</span>)<span style="border: 1px solid #FF0000; ">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb<span style="color: #666666; ">.</span>append(<span style="color: #BA2121; ">"loop: "</span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb<span style="color: #666666; ">.</span>append(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System<span style="color: #666666; ">.</span>out<span style="color: #666666; ">.</span>println(sb<span style="color: #666666; ">.</span>toString());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb<span style="color: #666666; ">.</span>setLength(<span style="color: #666666; ">0</span>); &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="border: 1px solid #FF0000; ">}</span><br> &nbsp;&nbsp;&nbsp;<span style="border: 1px solid #FF0000; ">}</span></div></div><ul><li>try语句块内部尽量精简，try语句块内部代码执行效率比较低，因此尽量只把可能会产生异常的代码书写在try语句块内部，不会产生异常的代码不要写在try语句块内</li></ul><h1 id="H516D300151765B8389C45B9A-12"><span>六、其它规定</span></h1><ul><li><p>项目相关的文档必须放在主工程的doc文件夹下；</p></li><li><p>每次发布版本前，要使用Android Studio→Inspect Code…对代码的静态质量做检测，尽早解决编码规范和编码质量的问题。</p></li></ul>
+          </div>
+  </div>
+</div>
+
+
+
+
+    <div class="clearfloats"></div>
+  </div>      <div id="xdocFooter">
+  
+       <div class="doc-tags" id="xdocTags">
+        标签：
+        </div>
+  
+  <div id="xdocAuthors">
+    <div class="xdocCreation">       在2016/08/17 15:31上被superadmin创建<br>
+          </div>
+  </div>
+</div>
+<div id="xwikidata">
+      
+    
+              
+    
+    
+    
+                          <div id="docextraanchors">
+<span id="Commentsanchor">&nbsp;</span><span id="Attachmentsanchor">&nbsp;</span><span id="Historyanchor">&nbsp;</span><span id="Informationanchor">&nbsp;</span></div>
+  <div id="xwikidatacontents">
+    <div class="floatcontainer" id="docExtraTabs">
+      <ul class="xwikitabbar" id="docExtrasTabsUl">
+                  <li id="Commentstab" class="active">
+            <a id="Commentslink" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/#Comments">
+              评论  <span class="itemCount">（0）</span>             </a>
+          </li>
+                  <li id="Attachmentstab">
+            <a id="Attachmentslink" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/#Attachments">
+              附件  <span class="itemCount">（0）</span>             </a>
+          </li>
+                  <li id="Historytab">
+            <a id="Historylink" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/#History">
+              记录             </a>
+          </li>
+                  <li id="Informationtab">
+            <a id="Informationlink" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/#Information">
+              信息             </a>
+          </li>
+              </ul>
+    </div>
+                <div id="docextrapanes" class="">
+              <div id="Commentspane" class=""><div id="commentscontent" class="xwikiintracontent">
+  <div id="_comments">
+  <p class="noitems">该文档没有评论</p>
+
+      </div> </div></div>
+              <div id="Attachmentspane" class="hidden empty"></div>
+              <div id="Historypane" class="hidden empty"></div>
+              <div id="Informationpane" class="hidden empty"></div>
+          </div>
+                <script type="text/javascript">
+      var hashviewer = self.document.location.hash.substring(1);
+                                                var extraInit = function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", false) };
+                if (hashviewer == "Comments") {
+          var extraInit = function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", true) };
+        }
+                                if ($("Commentslink") != null) {
+          $("Commentslink").href="#Comments";
+          Event.observe($("Commentslink"), "click", function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", false); }, false);
+        }
+                                if ($("tmShowComments") != null) {
+          $("tmShowComments").href="#Comments";
+          Event.observe($("tmShowComments"), "click", function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", true); }, false);
+        }
+                                if ($("commentsshortcut") != null) {
+          $("commentsshortcut").down('a').href="#comments";
+          Event.observe($("commentsshortcut"), "click", function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", true); }, false);
+        }
+                                                                              if (hashviewer == "Attachments") {
+          var extraInit = function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", true) };
+        }
+                                if ($("Attachmentslink") != null) {
+          $("Attachmentslink").href="#Attachments";
+          Event.observe($("Attachmentslink"), "click", function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", false); }, false);
+        }
+                                if ($("tmShowAttachments") != null) {
+          $("tmShowAttachments").href="#Attachments";
+          Event.observe($("tmShowAttachments"), "click", function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", true); }, false);
+        }
+                                if ($("attachmentsshortcut") != null) {
+          $("attachmentsshortcut").down('a').href="#attachments";
+          Event.observe($("attachmentsshortcut"), "click", function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", true); }, false);
+        }
+                                                                              if (hashviewer == "History") {
+          var extraInit = function(){ XWiki.displayDocExtra("History", "historyinline.vm", true) };
+        }
+                                if ($("Historylink") != null) {
+          $("Historylink").href="#History";
+          Event.observe($("Historylink"), "click", function(){ XWiki.displayDocExtra("History", "historyinline.vm", false); }, false);
+        }
+                                if ($("tmShowHistory") != null) {
+          $("tmShowHistory").href="#History";
+          Event.observe($("tmShowHistory"), "click", function(){ XWiki.displayDocExtra("History", "historyinline.vm", true); }, false);
+        }
+                                if ($("historyshortcut") != null) {
+          $("historyshortcut").down('a').href="#history";
+          Event.observe($("historyshortcut"), "click", function(){ XWiki.displayDocExtra("History", "historyinline.vm", true); }, false);
+        }
+                                                                              if (hashviewer == "Information") {
+          var extraInit = function(){ XWiki.displayDocExtra("Information", "informationinline.vm", true) };
+        }
+                                if ($("Informationlink") != null) {
+          $("Informationlink").href="#Information";
+          Event.observe($("Informationlink"), "click", function(){ XWiki.displayDocExtra("Information", "informationinline.vm", false); }, false);
+        }
+                                if ($("tmShowInformation") != null) {
+          $("tmShowInformation").href="#Information";
+          Event.observe($("tmShowInformation"), "click", function(){ XWiki.displayDocExtra("Information", "informationinline.vm", true); }, false);
+        }
+                                if ($("informationshortcut") != null) {
+          $("informationshortcut").down('a').href="#information";
+          Event.observe($("informationshortcut"), "click", function(){ XWiki.displayDocExtra("Information", "informationinline.vm", true); }, false);
+        }
+                                            document.observe("dom:loaded", extraInit, false);
+    </script>
+  </div> </div>  
+    </div>      </div><div id="leftPanels" class="panels left panel-width-Medium">
+      <div class="panel expanded Navigation"><h1 class="xwikipaneltitle">导航</h1><div class="xwikipanelcontents">
+
+
+
+
+
+
+                                                                                                                                                      <div class="xtree jstree jstree-1 jstree-xwiki jstree-xwiki-responsive" data-responsive="true" data-url="/xwiki/bin/get/XWiki/DocumentTree?outputSyntax=plain&amp;showAttachments=false&amp;showTranslations=false&amp;" data-draganddrop="false" data-contextmenu="false" data-icons="false" data-edges="false" data-checkboxes="false" data-opento="document:xwiki:规范.java编程规范.WebHome" data-finder="false" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="document:xwiki:Blog.WebHome" aria-busy="false"><ul class="jstree-container-ul jstree-children jstree-no-dots jstree-no-icons" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:Blog.WebHome_anchor" aria-expanded="false" id="document:xwiki:Blog.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/Blog/" tabindex="-1" id="document:xwiki:Blog.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Blog</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:Wiki主页.WebHome_anchor" id="document:xwiki:Wiki主页.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/Wiki%E4%B8%BB%E9%A1%B5/" tabindex="-1" id="document:xwiki:Wiki主页.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Wiki主页</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:XWiki.WebHome_anchor" aria-expanded="false" id="document:xwiki:XWiki.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/XWiki/" tabindex="-1" id="document:xwiki:XWiki.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>XWiki</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:中间件.WebHome_anchor" aria-expanded="false" id="document:xwiki:中间件.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E4%B8%AD%E9%97%B4%E4%BB%B6/" tabindex="-1" id="document:xwiki:中间件.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>中间件</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:动效库.WebHome_anchor" aria-expanded="false" id="document:xwiki:动效库.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E5%8A%A8%E6%95%88%E5%BA%93/" tabindex="-1" id="document:xwiki:动效库.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>动效库</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:接口文档.WebHome_anchor" aria-expanded="false" id="document:xwiki:接口文档.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" tabindex="-1" id="document:xwiki:接口文档.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>接口文档</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:新技术讨论.WebHome_anchor" aria-expanded="false" id="document:xwiki:新技术讨论.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E6%96%B0%E6%8A%80%E6%9C%AF%E8%AE%A8%E8%AE%BA/" tabindex="-1" id="document:xwiki:新技术讨论.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>新技术讨论</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:知识共享.WebHome_anchor" aria-expanded="false" id="document:xwiki:知识共享.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB/" tabindex="-1" id="document:xwiki:知识共享.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>知识共享</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:经验探讨.WebHome_anchor" aria-expanded="false" id="document:xwiki:经验探讨.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E7%BB%8F%E9%AA%8C%E6%8E%A2%E8%AE%A8/" tabindex="-1" id="document:xwiki:经验探讨.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>经验探讨</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:自由交流.WebHome_anchor" aria-expanded="false" id="document:xwiki:自由交流.WebHome" class="jstree-node  jstree-closed"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%87%AA%E7%94%B1%E4%BA%A4%E6%B5%81/" tabindex="-1" id="document:xwiki:自由交流.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>自由交流</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="document:xwiki:规范.WebHome_anchor" aria-expanded="true" id="document:xwiki:规范.WebHome" class="jstree-node  jstree-open jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/" tabindex="-1" id="document:xwiki:规范.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>规范</a><ul role="group" class="jstree-children"><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="document:xwiki:规范.APP团队工作纪律、规章制度和处罚机制.WebHome_anchor" id="document:xwiki:规范.APP团队工作纪律、规章制度和处罚机制.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/APP%E5%9B%A2%E9%98%9F%E5%B7%A5%E4%BD%9C%E7%BA%AA%E5%BE%8B%E3%80%81%E8%A7%84%E7%AB%A0%E5%88%B6%E5%BA%A6%E5%92%8C%E5%A4%84%E7%BD%9A%E6%9C%BA%E5%88%B6/" tabindex="-1" id="document:xwiki:规范.APP团队工作纪律、规章制度和处罚机制.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>APP团队规章制度和处罚机制</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="document:xwiki:规范.APP团队新手必读.WebHome_anchor" id="document:xwiki:规范.APP团队新手必读.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/APP%E5%9B%A2%E9%98%9F%E6%96%B0%E6%89%8B%E5%BF%85%E8%AF%BB/" tabindex="-1" id="document:xwiki:规范.APP团队新手必读.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>APP团队新手必读</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="document:xwiki:规范.APP团队软件开发规范.WebHome_anchor" id="document:xwiki:规范.APP团队软件开发规范.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/APP%E5%9B%A2%E9%98%9F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/" tabindex="-1" id="document:xwiki:规范.APP团队软件开发规范.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>APP团队软件开发规范</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="document:xwiki:规范.APP请求基本参数统一方案.WebHome_anchor" id="document:xwiki:规范.APP请求基本参数统一方案.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/APP%E8%AF%B7%E6%B1%82%E5%9F%BA%E6%9C%AC%E5%8F%82%E6%95%B0%E7%BB%9F%E4%B8%80%E6%96%B9%E6%A1%88/" tabindex="-1" id="document:xwiki:规范.APP请求基本参数统一方案.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>APP请求基本参数统一方案</a></li><li role="treeitem" aria-selected="true" aria-level="2" aria-labelledby="document:xwiki:规范.java编程规范.WebHome_anchor" id="document:xwiki:规范.java编程规范.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor jstree-clicked" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/" tabindex="-1" id="document:xwiki:规范.java编程规范.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>APP团队java编程规范</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="document:xwiki:规范.应用组代码审查CheckList.WebHome_anchor" id="document:xwiki:规范.应用组代码审查CheckList.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/%E5%BA%94%E7%94%A8%E7%BB%84%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5CheckList/" tabindex="-1" id="document:xwiki:规范.应用组代码审查CheckList.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>应用组代码审查CheckList</a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="document:xwiki:规范.应用组提测CheckList.WebHome_anchor" id="document:xwiki:规范.应用组提测CheckList.WebHome" class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://172.28.2.175:8080/xwiki/bin/view/%E8%A7%84%E8%8C%83/%E5%BA%94%E7%94%A8%E7%BB%84%E6%8F%90%E6%B5%8BCheckList/" tabindex="-1" id="document:xwiki:规范.应用组提测CheckList.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>应用组提测CheckList</a></li></ul></li></ul></div></div></div>
+  </div>
+
+  </div>
+<div class="clearfloats"></div>
+  </div></div><div id="footerglobal">
+  <div id="xwikilicence">This wiki is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons 2.0</a> license</div>
+              <div id="xwikiplatformversion">XWiki Enterprise 7.4.1 - <a onclick="openURL(&#39;http://enterprise.xwiki.org/xwiki/bin/view/Main/Documentation&#39;, &#39;_blank&#39;); return false;" href="http://www.xwiki.org/xwiki/bin/view/Main/Documentation">Documentation</a></div>
+</div>
+
+</div></div>
+<div class="drawer-overlay-upper drawer-toggle"></div></body></html>
