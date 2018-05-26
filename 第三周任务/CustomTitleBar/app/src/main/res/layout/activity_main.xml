@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:MyTitleBar="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.example.administrator.customtitlebar.MyTitleBar
+        android:id="@+id/mytitlebar"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        MyTitleBar:backBackground = "@drawable/back_selector"
+        MyTitleBar:editBackground = "@drawable/edit_selector"
+        MyTitleBar:titleText="已加入课程"
+        MyTitleBar:titleTextSize="15dp"/>
+        <!--MyTitleBar:titleTextColor="@color/black"-->
+
+
+</LinearLayout>

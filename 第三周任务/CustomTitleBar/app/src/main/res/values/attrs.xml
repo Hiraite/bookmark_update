@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTitleBar">
+        <attr name="backBackground" format="reference"/>
+        <attr name="editBackground" format="reference"/>
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="cancelBackground" format="reference"/>
+        <attr name="selectAllBackground" format="reference"/>
+        <attr name="cancelSelectBackground" format="reference"/>
+    </declare-styleable>
+</resources>
